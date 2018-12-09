@@ -1,0 +1,339 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #FFFFFF;
+
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+.floating-navbar {
+	position: fixed;
+	margin: 100px 50px 0px 0px;
+	padding: 25px 10px;
+
+	border: 6px solid #222930;
+	border-left: none;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+
+	background-color: #4EB1BA;
+	z-index: 1;
+}
+
+.floating-navbar a {
+	text-decoration: none;
+	color: #E9E9E9;
+}
+
+.floating-navbar a:hover {
+	text-decoration: underline;
+}
+
+.content p {
+	font-variant: normal;
+}
+
+body {
+	background-color: #232B2B;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #232B2B;
+}
+
+.header {
+	display: flex;
+	align-items: center;	
+	
+	background-image: url("../img/header-image.jpg");
+	  
+	height: 500px;
+	width: 100%;
+	
+}
+
+#image-logo {
+	float: left;
+	margin-left: 30%;
+	height: 160px;
+	width: 200px;
+	border-radius: 30px;
+	border-style: solid;
+	border-width: 2px;	
+}
+
+.top-navbar {
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+
+	width: 100%;
+	background-color: #131B1B;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+.top-navbar a {
+	text-decoration: none;
+	padding: 5px 20px;
+
+	color: #FFFFFF;
+}
+
+.navbar {	
+	overflow: hidden;
+	
+	display: flex;
+	flex-direction: row;
+	
+	width: 100%;
+	background-color: #131B1B;
+}
+
+.navbar a{
+	text-decoration: none;
+	padding: 10px 50px;
+	color: #FFFFFF;
+
+	width: 100%;
+	justify-content: center;
+}
+
+.navbar a:hover, .navbar a:active, .navbar a:focus, .navbar a:target{
+	background-color: #232B2B;
+}
+
+.navbar a.selected {
+	background-color: #232B2B;
+}
+
+.content {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 5% 15%;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+	padding: 20px;
+
+	margin: 0 20px;
+}
+
+
+.food-image {
+	height: 300px;
+	width: 450px;
+	
+	border-radius: 15px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	
+	width: 100%;
+	bottom: 0px;
+	
+	background-color: #131B1B;
+	color: #FFFFFF;
+	
+	margin-top: 100px;
+	position: relative;
+	padding: 50px 15px;	
+}
+
+.footer-item {
+	flex: 1;	
+}
+
+h2 {
+	padding: 10px;
+}
+
+input {
+	padding: 10px;
+	margin: 10px;
+
+	width: 100%;
+}
+
+label {
+	padding-left: 10px;
+}
+
+input, select {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 8px;
+	display: flex;
+	
+    border: 1px solid #131B1B;
+    border-radius: 4px;
+	box-sizing: border-box;
+	
+	color: #131B1B;
+
+	justify-content: center;
+}
+
+input[type=submit] {
+    width: 400px;
+    background-color: #131B1B;
+    color: #FFFFFF;
+    padding: 7px 10px;
+    margin: 24px 8px;
+    border: none;
+    border-radius: 4px;
+	cursor: pointer;
+	
+	font-size: 25px;
+}
+
+input[type=submit]:hover {
+    background-color: #DC3D24;
+}
+
+.container-gallery {
+	display: flex;	
+	justify-content: space-between;
+	flex-direction: column;	
+
+	margin: 5% 15%;
+}
+
+.image-cycler {
+	position: relative;
+}
+
+.mySlides {
+	display: none;
+
+	width: 50%;
+	height: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+}
+
+.content-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	flex: 8;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-gallery {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 8px;
+}
+
+.column-gallery img {
+	margin-top: 16px;
+	vertical-align: middle;
+	height: auto;
+	width: 100%;
+}
+
+.menu-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: space-around;
+}
+
+.menu-block {
+	position: relative;	
+	margin: 30px;
+}
+
+.menu-block img {
+	max-width: 500px;
+	height: auto;
+}
+
+.menu-block-text {
+	position: absolute;
+	bottom: 0;
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+	transform: translateY(-5px);
+}
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 1210px) {
+	.column-gallery {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+
+	.content {
+		flex-direction: column;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 610px) {
+	.column-gallery {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+
+	.content {
+		flex-direction: column;
+	}
+  }

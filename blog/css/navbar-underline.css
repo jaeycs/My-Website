@@ -1,0 +1,20 @@
+.navbar-underline {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #fffff5;
+    padding-top: 10px;
+    align-items: flex-end;
+}
+
+.navbar-underline a {
+    transition: 0.5s;
+    text-decoration-color: transparent;
+    cursor: pointer;
+    color: #181816;
+    margin: 5px 30px;
+}
+
+.navbar-underline a:hover {
+    text-decoration: underline;
+}
